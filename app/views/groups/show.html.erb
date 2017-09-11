@@ -1,8 +1,11 @@
 <div class="container">
   <div class="row justify-content-end">
+
     <% if current_user && current_user == @group.user %>
-    <%= link_to("Edit", edit_group_path(@group), class: "btn btn-primary")%>
+    <%= link_to("Edit", edit_group_path(@group), class: "btn btn-warning")%>
     <% end %>
+
+    <%= link_to "新增文章", new_group_post_path(@group), class:"btn btn-primary" %>
   </div>
   <div class="row justify-content-center">
       <h2><%= @group.title %></h2>
