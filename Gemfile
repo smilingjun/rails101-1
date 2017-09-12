@@ -36,6 +36,7 @@ gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 4.2'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 
 
