@@ -17,6 +17,9 @@
         </a>
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to "我的群组", account_groups_path, class:"dropdown-item" %>
+          <%= link_to "我的帖子", account_posts_path, class:"dropdown-item" %>
+          <hr>
           <%= link_to("登出", destroy_user_session_path, method: :delete, class: "dropdown-item") %>
         <% end %>
         </div>
