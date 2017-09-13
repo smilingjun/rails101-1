@@ -9,8 +9,10 @@
     <span>
       <% if current_user && current_user.is_member_of?(@group) %>
         <label class="badge badge-success">群组成员</label>
+        <%= link_to "退出群组", quit_group_path(@group), method: :post, class:"btn btn-danger" %>
       <% else %>
         <label class="badge badge-secondary">不是群组成员</label>
+        <%= link_to "加入群组", join_group_path(@group), method: :post, class:"btn btn-success" %>
       <% end %>
     </span>
   </div>
